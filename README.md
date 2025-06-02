@@ -1,2 +1,226 @@
-# instgarm_loginpage
-demo for instagarm login page
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        body{
+            background-color: rgba(248, 250, 250, 0.805);
+        }
+        main{
+            margin-left: 550px;
+            width: 30%;
+            height: 700px;
+            display: flex;
+            gap: 10px;
+            flex-direction: column;
+            justify-items: center;
+            align-items: center;
+        }
+        #login-container{
+            background-color: white;
+            margin-top: 10px;
+            width: 80%;
+            height: 70%;
+            border: 2px solid rgba(248, 246, 246, 0.907);
+            box-shadow: 0px 0px 2px black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #signup-container{
+            background-color: white;
+            width: 80%;
+            height: 20%;
+            border: 2px solid rgba(248, 246, 246, 0.797);   
+            box-shadow: 0px 0px 2px black;         
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+        }
+        #logo{
+            width: 100%;
+            height: 50%;
+            font-family: cursive;
+            font-size: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #username{
+            width: 100%;
+            height: 10%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }        
+        #password{
+            width: 100%;
+            height: 10%;            
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #button{
+            width: 100%;
+            height: 10%;      
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #or{
+            width: 100%;
+            height: 10%;      
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #lginfb{
+            width: 100%;
+            height: 10%;       
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+        }        
+        #forgetpass{
+            width: 100%;
+            height: 10%;      
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        #in1{
+            color: rgba(0, 0, 0, 0.6);
+            width: 80%;
+            height: 30px;
+            background-color: rgb(210, 252, 227);
+        }
+        #in2{
+            color: rgba(0, 0, 0, 0.6);
+            width: 80%;
+            height: 30px;
+            background-color: rgb(210, 252, 227);
+        }
+        #lgbutn{
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+            background-color: rgb(160, 89, 226);
+            color: white;
+            width: 80%;
+            height: 30px;
+            border-radius: 7px;
+        }
+        h4 {
+            width: 80%; 
+            text-align: center; 
+            border-bottom: 1px solid #000; 
+            line-height: 0.1em;
+            margin: 20px 0 20px; 
+        } 
+        h4 .or { 
+            background:#fff; 
+            padding:0 10px; 
+        }
+        #lginfb img{
+            height: 70%;
+            width: 10%;
+        }
+        #link1:hover{
+            color: black;
+        }
+        #fp{
+            color: #000;
+        }
+        .signup{
+            width: 100%;
+            height: 10%;      
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+        }
+        #app{
+            width: 100%;
+            height: 30%;      
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+        }
+        #playstore{
+            width: 35%;
+            height: 100%;
+        }
+        #playstore #playstoreimg{
+            width: 100%;
+            height: 100%;
+        }
+        #microstore{
+            width: 35%;
+            height: 100%;
+        }
+        #microstore #microstoreimg{
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div id="login-container">
+            <span id="logo">Instagram</span>
+            <span id="username">
+                <input id="in1" type="text" placeholder="Phone number,username or email">
+            </span>
+            <span id="password">
+                <input id="in2" type="text" placeholder="Password">
+            </span>
+            <span id="button">
+                <button id="lgbutn">Log in</button>
+            </span>
+            <span id="or">
+                <h4><span class="or">OR</span></h4> 
+            </span>    
+            <span id="lginfb">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/2048px-2021_Facebook_icon.svg.png">
+                <a href="https://www.facebook.com/login.php/" id="link1">Log in with Facebook</a>
+            </span>                        
+            <span id="forgetpass">
+                <a href="****" id="fp">Forget password ?</a>
+            </span>
+        </div>
+        <div id="signup-container">
+            <span class="signup">
+                <p id="para">Don't not have a account</p>
+                <a href="000" id="signlink">Sign up</a>
+            </span>
+            <p>Get the app.</p>
+            <span id="app">
+                <a href="ppp" id="playstore">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/2560px-Google_Play_Store_badge_EN.svg.png" alt="" id="playstoreimg">
+                </a>
+                <a href="mmm" id="microstore">
+                    <img src="data:image/png;base64,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" alt="" id="microstoreimg">
+                </a>
+            </span>
+        </div>
+    </main>
+</body>
+</html>
